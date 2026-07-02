@@ -1,0 +1,45 @@
+# Retail Data Engineering Project
+
+This project demonstrates an end-to-end Retail Data Engineering solution built using Azure Databricks, PySpark, Delta Lake, and Medallion Architecture (Bronze, Silver, Gold).
+
+## Project Overview
+
+The pipeline processes retail data related to customers, products, orders, and regions. Raw data is ingested into the Bronze layer, transformed and cleansed in the Silver layer, and loaded into Gold tables for analytical reporting.
+
+## Key Features
+
+- Bronze, Silver, and Gold layer implementation
+- Data cleansing and transformation using PySpark
+- Parameter-driven data processing
+- Delta Lake storage format
+- Slowly Changing Dimension (SCD) implementation in Gold tables
+- Customer, Product, Order, and Region analytics
+
+## Architecture
+
+Bronze Layer → Silver Layer → Gold Layer
+
+## SCD Implementation
+
+Gold tables implement Slowly Changing Dimensions (SCD) to maintain historical changes in dimensional data. This enables:
+
+- Historical tracking of customer and product changes
+- Point-in-time reporting
+- Data warehouse best practices
+- Improved business analytics and auditing
+
+## Technologies Used
+
+- Azure Databricks
+- PySpark
+- SQL
+- Delta Lake
+- Azure Data Lake Storage (ADLS)
+- Medallion Architecture
+
+## Data Domains
+
+- Customers
+- Products
+- Orders
+- Regions
